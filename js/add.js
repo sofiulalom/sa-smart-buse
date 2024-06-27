@@ -1,9 +1,13 @@
 
 const allbtn = document.getElementsByClassName('A');
+let countminas = 40;
 let count = 0;
+
 for (const btn of allbtn) {
     btn.addEventListener('click', function (e) {
         count = count + 1;
+        countminas = countminas - 1;
+        setInnerText('seat-ablable',countminas)
         const seatName = e.target.childNodes[0].data;
         const seatPrice = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[3].childNodes[0].innerText;
         
