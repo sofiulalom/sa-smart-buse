@@ -1,0 +1,14 @@
+li{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    list-style:numeric;
+}
+#Seat-container{
+ width: 200px;
+ margin: auto;
+
+}
