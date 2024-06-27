@@ -16,7 +16,12 @@ for (const btn of allbtn) {
         li.appendChild(p);
         li.appendChild(p2);
         seatContainer.appendChild(li);
-       
+        const totalCost = document.getElementById('total-cost').innerText;
+      
+        const totalCostInt = parseInt(totalCost);
+        const price = parseInt(seatPrice);
+        const total = totalCostInt + price;
+        setInnerText('total-cost', total)
 
         
 
