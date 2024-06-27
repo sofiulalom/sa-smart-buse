@@ -23,7 +23,7 @@ for (const btn of allbtn) {
         const total = totalCostInt + price;
         setInnerText('total-cost', total)
 
-        
+        setInnerText('grend-total', total)
 
         
         //  console.log(sitName)
