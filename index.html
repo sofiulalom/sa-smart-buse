@@ -27,7 +27,7 @@
             </div>
             <a class="btn btn-ghost text-xl font-bold">SA-Ticket</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center  lg:flex">
             <ul class="menu menu-horizontal lg:flex justify-around gap-5  px-2">
              <li>Home</li>
              
@@ -43,7 +43,7 @@
         </div>
 
         </nav>
-        <div class="banner mx-10  lg:h-[550px] bg-[url(./images/banner.png)] bg-center bg-no-repeat rounded-lg">
+        <div id="banner" class="banner mx-10   lg:h-[550px] bg-[url(./images/banner.png)] bg-center bg-no-repeat rounded-lg">
             <!-- <img src="/images/banner.png" alt=""> -->
             <div class="text-white text-center p-3 uppercase lg:p-32" >
             <h1 class="text-4xl mb-5">Dhaka to Sylhet </h1>
@@ -60,7 +60,7 @@
 
     </header>
     <main>
-        <section class="mt-24">
+        <section id="best-offirs" class="mt-24 ">
            <div> 
               <h1 class="text-4xl font-bold text-center"> Best offers for you</h1>
            </div>
@@ -99,11 +99,11 @@
         </section>
 
      
-        <section class="my-24 bg-[#F7F8F8] rounded-t-3xl">
+        <section id="Sa-ticket" class="my-24 bg-[#F7F8F8]  rounded-t-3xl">
               <div class="hero">
              <div class="hero-content flex-col lg:flex">
             <div class="text-center pt-5 ">
-                <h1 class="text-4xl font-bold">P.H Paribahan</h1>
+                <h1 class="text-4xl font-bold">SA Ticket</h1>
                 <p>Yes, you can run unit tests and view the results directly within the app.
                      The integrated testing features allow for a streamlined .</p>
 
@@ -164,7 +164,7 @@
 
            
 
-        <div class="hero ">
+        <div id="Select-ticket" class="hero  ">
         <div class="hero-content flex-col lg:flex-row">
           <div class="bg-white px-5 mb-24 rounded-lg">
                   <h1 class="border-dashed border-b-2 pb-4 font-bold border-gray-200 my-3 ">Select Your Seat</h1>
@@ -257,7 +257,7 @@
                     <!-- gird card section end -->
                 </div>
 
-           <div class="bg-white px-5 mb-16  rounded-lg">
+           <div  class="bg-white px-5 mb-16  rounded-lg">
                   <h1 class="border-dashed border-b-2  px-2 font-bold
                    border-gray-200 pb-4 pt-4  ">Select Your Seat</h1>
                   <div class="bg-slate-200 px-5 py-8 rounded-lg mt-6">
@@ -315,7 +315,7 @@
                       class="input input-bordered w-full max-w-xs" />
                       
                     </label>
-                     <button id="submit-btn"   onclick="succesfullForm()" disabled class="btn w-full  max-w-xs text-white mt-2 py-2 
+                     <button   onclick="submitBtn()" class="btn w-full  max-w-xs text-white mt-2 py-2 
                      rounded-md bg-green-400">open modal</button>
                       <div class="flex gap-2 my-2">
                         <span class='underline text-xs text-green-500'>Teams and Condition</span>
@@ -335,6 +335,7 @@
            
               
             </section>
+       
           
         
     </main>

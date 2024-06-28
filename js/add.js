@@ -15,6 +15,7 @@ for (const btn of allbtn) {
 
         //  console.log(sitName)
         if (count <= 2) {
+
          const seatContainer = document.getElementById('Seat-container');
         const li = document.createElement('li');
         const p = document.createElement('p');
@@ -54,6 +55,4 @@ function getBackgroundByAdd(e) {
 function setInnerText(Id, value) {
     document.getElementById(Id).innerText = value;
 }
-
-
 
