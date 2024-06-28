@@ -53,7 +53,7 @@
             <p class="mb-5">Welcome to our ticket web site where 
               you will find many <br> opportunities and our 
               service is very <br> good which is proven to work.v</p>
-            <button class="btn bg-green-500" href="Paribahan">Buy Now</button>
+            <button class="btn bg-green-500" href="sapranbahan">Buy Now</button>
         </div>
         </div>
 
@@ -126,7 +126,7 @@
                     <p class="flex justify-center items-center gap-1 px-2  text-green-500">
                       <img class="w-8" src="./images/seat-green.png" alt="">
                       <p class="text-green-400 text-2xl">
-                        <span id="seat-ablable">4o</span>
+                        <span id="seat-ablable">40</span>
                         seats left
                       </p>
                     </p>
@@ -303,7 +303,7 @@
                         <span class="label-text">Phone Number</span>
                         
                       </div>
-                      <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                      <input  id="number" type="number" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                       
                     </label>
                       <label class="form-control w-full max-w-xs mb-2">
@@ -311,10 +311,12 @@
                         <span class="label-text">EmaidId</span>
                         
                       </div>
-                      <input type="email" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                      <input  type="email" placeholder="Type here" 
+                      class="input input-bordered w-full max-w-xs" />
                       
                     </label>
-                     <input class="w-full max-w-xs text-white mt-2 py-2 rounded-md bg-green-400" type="submit" value="Submit">
+                     <button id="submit-btn"   onclick="succesfullForm()" disabled class="btn w-full  max-w-xs text-white mt-2 py-2 
+                     rounded-md bg-green-400">open modal</button>
                       <div class="flex gap-2 my-2">
                         <span class='underline text-xs text-green-500'>Teams and Condition</span>
                         <span class='underline text-green-500 text-xs'>Cancellation Policy</span>
@@ -333,6 +335,7 @@
            
               
             </section>
+          
         
     </main>
    <footer class="footer p-20 bg-neutral text-neutral-content">

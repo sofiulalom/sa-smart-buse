@@ -7,12 +7,15 @@ for (const btn of allbtn) {
     btn.addEventListener('click', function (e) {
         count = count + 1;
         countminas = countminas - 1;
-        setInnerText('seat-ablable', countminas)
+      
         
         const seatName = e.target.childNodes[0].data;
         const seatPrice = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[3].childNodes[0].innerText;
         
-        const seatContainer = document.getElementById('Seat-container');
+
+        //  console.log(sitName)
+        if (count <= 2) {
+         const seatContainer = document.getElementById('Seat-container');
         const li = document.createElement('li');
         const p = document.createElement('p');
         p.innerText = seatName;
@@ -29,14 +32,15 @@ for (const btn of allbtn) {
         setInnerText('total-cost', total)
 
         setInnerText('grend-total', total)
-
+            
+            setInnerText('seat-ablable', countminas)
+            setInnerText('set-count', count)
+            getBackgroundByAdd(e)
+        }
         
-        //  console.log(sitName)
-        setInnerText('set-count', count)
-        getBackgroundByAdd(e)
       
+    
         
-
 
     })
 }
@@ -50,3 +54,6 @@ function getBackgroundByAdd(e) {
 function setInnerText(Id, value) {
     document.getElementById(Id).innerText = value;
 }
+
+
+
